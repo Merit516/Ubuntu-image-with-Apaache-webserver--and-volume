@@ -1,0 +1,7 @@
+# thid image of ubuntu os with volume and apache web server
+#This is stebs to run to make container for this imge
+# 1- this to build iamge from Dockerfile
+docker build -t mywebiamge .
+#2-make container this is name : nice_ubuntu_1 & name of volume:mydata
+docker run -it --name nice_ubuntu_1  -v mydata:/home/backup mywebimage
+
